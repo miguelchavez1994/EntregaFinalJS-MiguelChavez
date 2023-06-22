@@ -1,14 +1,16 @@
 .contenedor {
+    /*
     display: grid;
     place-items: center;
     height: 100vh;
-    margin: 1em;
+    margin: 1em;*/
 
 
     .tarjeta {
         width: 100%;
         box-shadow: 0 10px 20px ;
-        border-radius: 1.2em;
+        border-radius: 1.4em;
+        margin: 20px;
             }    
 }
 .perritoNombre{
