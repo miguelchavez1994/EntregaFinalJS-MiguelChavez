@@ -1,12 +1,15 @@
+//H2
+.titulo-2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    margin-top: 4rem;
+}
+
+//FIN H2
+
 .contenedor {
-    /*
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    margin: 1em;*/
-
-
-    .tarjeta {
+        .tarjeta {
         width: 100%;
         box-shadow: 0 10px 20px ;
         border-radius: 1.4em;

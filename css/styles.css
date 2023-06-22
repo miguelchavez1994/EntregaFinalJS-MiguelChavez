@@ -71,13 +71,13 @@ header {
   scale: 1.05;
 }
 
-.contenedor {
-  /*
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  margin: 1em;*/
+.titulo-2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 5rem;
+  margin-top: 4rem;
 }
+
 .contenedor .tarjeta {
   width: 100%;
   box-shadow: 0 10px 20px;
