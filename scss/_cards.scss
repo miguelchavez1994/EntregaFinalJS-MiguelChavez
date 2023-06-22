@@ -1,0 +1,25 @@
+.contenedor {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 1em;
+
+
+    .tarjeta {
+        width: 100%;
+        box-shadow: 0 10px 20px ;
+        border-radius: 1.2em;
+            }    
+}
+.perritoNombre{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 500px) {
+    .card {
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+ 
