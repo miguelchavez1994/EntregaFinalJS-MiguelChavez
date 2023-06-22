@@ -1,19 +1,12 @@
-/*
-function añadirPerrioPerdido () 
-function removerPerritoPerdido ()
-function donarRescatista()
-*/
-
-function guardarPerritosLS() {
+/*function guardarPerritosLS() {
     localStorage.setItem("perritosPerdidos", JSON.stringify(perritosPerdidos));
 }
 
-
-function cargarPerritosLS() {
-    return JSON.parse(localStorage.getItem("perritosPerdidos"));
-}
+/*
 
 
+
+/*
 function guardarCarritoLS(carrito) {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 }
@@ -29,7 +22,7 @@ function buscarPerrito(id) {
     return perritosPerdidos.find(item => item.id === id);
 }
 
-/*
+
 function estaEnElCarrito(id) {
     const carrito = cargarCarritoLS();
 

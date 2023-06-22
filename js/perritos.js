@@ -6,5 +6,11 @@ const perritosPerdidos = [
     {id:5 ,raza: "JACK RUSSELL", tanaño:"PEQUEÑO" , color: "BLANCO" , sexo: "MACHO" , nombre: "MANCHAS" , ciudad:"Lima" , distrito:"SAN MIGUEL" , fechaEncontrado:"30/05/2023" , imagen: `multimedia/images/perrito6.jpg`},
     {id:6 ,raza: "MESTIZO", tanaño:"MEDIANO" , color: "MARRON" , sexo: "MACHO" , nombre: "NN" , ciudad:"Lima" , distrito:"MAGDALENA" , fechaEncontrado:"03/06/2023" , imagen: `multimedia/images/perrito6.jpg`},
 ];
-
+function guardarPerritosLS() {
+    localStorage.setItem("perritosPerdidos", JSON.stringify(perritosPerdidos));
+}
 guardarPerritosLS ();
+
+function cargarPerritosLS() {
+    return JSON.parse(localStorage.getItem("perritosPerdidos"));
+}
