@@ -7,9 +7,10 @@ function renderPerrito() {
                                 <p class="perritoNombre card-text text-primary">Hola! Soy ${perritoDatos.nombre}</p>
                                 <p class="text-body-tertiary">Raza: ${perritoDatos.raza} </p>
                                 <p class="text-body-tertiary">Tamaño: ${perritoDatos.tamano}</p>
-                                
-                                <h4 class="text-primary"><b>$${perritoDatos.precio}</b></h4>
-                                <p class="my-5"><button class="btn btn-primary" onclick="agregarProducto(${perritoDatos.id});">Agregar (+)</button></p>
+                                <p class="text-body-tertiary">Sexo: ${perritoDatos.sexo}</p>
+                                <p class="text-body-tertiary">Me perdí en: ${perritoDatos.ciudad} , ${perritoDatos.distrito}</p>
+                                <p class="text-body-tertiary">Fecha de Rescata: ${perritoDatos.fechaEncontrado}</p>
+                                <p class="my-5"><button class="btn btn-primary" onclick="agregarProducto(${perritoDatos.id});">Adoptame!</button></p>
                             </div>`;
     document.getElementById("contenidoPerrito").innerHTML = contenidoPerrito
 }
