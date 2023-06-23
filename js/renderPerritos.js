@@ -8,7 +8,7 @@ function renderPerritos() {
     if (perritosPerdidos.length > 0) {
         perritosPerdidos.forEach(perrito => {
             contenido += `<div class="contenedor col-md-4 col-sm-12 mb-3 justify-content-center">
-                            <a href="pages/datos-patita.html" onclick="verProducto(${perrito.id})" class="text-decoration-none">
+                            <a href="pages/datos-patita.html" onclick="verPerrito(${perrito.id})" class="text-decoration-none">
                                 <div class="tarjeta card text-center border border-0">
                                     <img src="${perrito.imagen}" class="card-img-top" alt="${perrito.nombre}">
                                     <div class="card-body">
