@@ -9,54 +9,43 @@ body {
   background-color: white;
 }
 
+main {
+  justify-content: center;
+}
+
 .headerLink:hover {
   color: orange;
 }
 
 header {
+  align-items: center;
   position: relative;
-  padding: 0 2rem;
-}
-
-.navbar {
   width: 100%;
-  height: 60px;
-  max-width: 1200px;
+  background-color: white;
+  justify-content: center;
+  margin: 0;
+}
+header .navbar {
+  max-width: 90rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.navbar .headerLogo li {
+header .navbar .headerLogo li {
   list-style: none;
 }
-.navbar .headerLogo li a {
+header .navbar .headerLogo li a {
   color: black;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
-.navbar .headerLogo li a:hover {
+header .navbar .headerLogo li a:hover {
   color: orange;
 }
-.navbar ul {
-  display: flex;
-  gap: 2rem;
-}
-.navbar ul li {
-  list-style-type: none;
-}
-.navbar ul li .headerLink {
-  text-decoration: none;
-  color: black;
-  list-style: none;
-  font-size: 1rem;
-}
-.navbar ul li .headerLink:hover {
-  color: orange;
-}
-.navbar .action_btn {
-  background-color: orange;
+header .navbar .action_btn {
+  background-color: #FFC800;
   text-decoration: none;
   font-size: 1.1rem;
   color: white;
@@ -67,34 +56,74 @@ header {
   font-weight: bold;
   cursor: pointer;
 }
-.navbar .action_btn:hover {
+header .navbar .action_btn:hover {
   scale: 1.05;
+}
+header .navbar .links {
+  margin-bottom: 0;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #FFC800;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+header .navbar .links ul {
+  justify-content: space-between;
+  display: flex;
+  gap: 2rem;
+}
+header .navbar .links ul li {
+  list-style-type: none;
+}
+header .navbar .links ul li .headerLink {
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  font-size: 1.1rem;
+}
+header .navbar .links ul li .headerLink:hover {
+  color: #ffffff;
+  transition: 0.5s;
+}
+header .navbar .links ul li a {
+  margin-bottom: 0;
 }
 
 .titulo-2 {
   text-align: center;
   font-weight: bold;
   font-size: 5rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
-.contenedor .tarjeta {
+section .cont-enAdopcion {
+  max-width: 90rem;
+  margin: 0 auto !important;
+  float: none !important;
+}
+section .cont-enAdopcion .contenido {
+  justify-content: space-between;
+  background-color: black;
+}
+section .cont-enAdopcion .contenido .contenedor .tarjeta {
   width: 100%;
   box-shadow: 0 10px 20px;
   border-radius: 1.4em;
-  margin: 20px;
+  padding: 0;
 }
-
-.perritoNombre {
+section .cont-enAdopcion .contenido .perritoNombre {
   font-size: 1.8rem;
   font-weight: bold;
 }
 
+/*
 @media screen and (min-width: 500px) {
-  .card {
-    width: 350px;
-    margin: 0 auto;
-  }
+    .card {
+        width: 350px;
+        margin: 0 auto;
+    }
 }
+ */
 
 /*# sourceMappingURL=styles.css.map */
