@@ -1,0 +1,20 @@
+.portada-shape{
+    max-width: 90rem;
+    background-color: #FFC800;
+    margin: 0 auto !important; 
+	float: none !important; 
+    
+    div {
+        padding-top: 40px;
+        text-align: center;
+        h1{
+
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+
+}

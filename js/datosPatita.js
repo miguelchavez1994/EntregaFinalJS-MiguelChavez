@@ -3,8 +3,8 @@ function renderPerrito() {
     let contenidoPerrito = `<div class="contenedor col-md-4 offset-md-3">
                                 <img src="${perritoDatos.imagen}" class="img-fluid" alt="${perritoDatos.nombre}">
                             </div>
-                            <div class="tarjeta col-md-4">
-                                <p class="perritoNombre card-text text-primary">Hola! Soy ${perritoDatos.nombre}</p>
+                            <div class="col-md-4 texto-datos-patita">
+                                <p class="perritoNombre card-text">Hola! Soy ${perritoDatos.nombre}</p>
                                 <p class="text-body-tertiary">Raza: ${perritoDatos.raza} </p>
                                 <p class="text-body-tertiary">Tamaño: ${perritoDatos.tamano}</p>
                                 <p class="text-body-tertiary">Sexo: ${perritoDatos.sexo}</p>

@@ -8,28 +8,43 @@
 
 //FIN H2
 
-section{
+.SecAdopcion{
+   
     .cont-enAdopcion{
+       
+        background-color: #FAF5E6;
         max-width: 90rem;
         margin: 0 auto !important; 
 	    float: none !important; 
-        .contenido {
+        .titulo-2 {
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+            background-color: #FAF5E6;
+            margin: 0;
+        }
+        #contenido {
             justify-content: space-between;
-            background-color: black;
-
             .contenedor{
                 .tarjeta {
+                    border: solid 10px;
                     width: 100%;
                     box-shadow: 0 10px 20px ;
                     border-radius: 1.4em;
                     padding: 0;
+                    margin-bottom: 30px;
                     
-                        }    
+                    }  
                     }
-                    .perritoNombre{
-                        font-size: 1.8rem;
-                        font-weight: bold;
-                 }
+                    .patita-datos{
+                        .perritoNombre{
+                            color:#FFC800 ;
+                            font-size: 2rem;
+                            font-weight: bold;
+                            text-shadow: -1px 2px 3px rgba(0,0,0,0.86);                       
+                        }
+
+                    }
+                    
     
             }
             

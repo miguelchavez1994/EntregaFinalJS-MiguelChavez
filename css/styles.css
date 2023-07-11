@@ -31,6 +31,8 @@ header .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0;
+  border-bottom: black solid 1px;
 }
 header .navbar .headerLogo li {
   list-style: none;
@@ -90,6 +92,24 @@ header .navbar .links ul li a {
   margin-bottom: 0;
 }
 
+.portada-shape {
+  max-width: 90rem;
+  background-color: #FFC800;
+  margin: 0 auto !important;
+  float: none !important;
+}
+.portada-shape div {
+  padding-top: 40px;
+  text-align: center;
+}
+.portada-shape div h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.portada-shape div p {
+  font-size: 2rem;
+}
+
 .titulo-2 {
   text-align: center;
   font-weight: bold;
@@ -97,24 +117,34 @@ header .navbar .links ul li a {
   margin-top: 2rem;
 }
 
-section .cont-enAdopcion {
+.SecAdopcion .cont-enAdopcion {
+  background-color: #FAF5E6;
   max-width: 90rem;
   margin: 0 auto !important;
   float: none !important;
 }
-section .cont-enAdopcion .contenido {
-  justify-content: space-between;
-  background-color: black;
+.SecAdopcion .cont-enAdopcion .titulo-2 {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  background-color: #FAF5E6;
+  margin: 0;
 }
-section .cont-enAdopcion .contenido .contenedor .tarjeta {
+.SecAdopcion .cont-enAdopcion #contenido {
+  justify-content: space-between;
+}
+.SecAdopcion .cont-enAdopcion #contenido .contenedor .tarjeta {
+  border: solid 10px;
   width: 100%;
   box-shadow: 0 10px 20px;
   border-radius: 1.4em;
   padding: 0;
+  margin-bottom: 30px;
 }
-section .cont-enAdopcion .contenido .perritoNombre {
-  font-size: 1.8rem;
+.SecAdopcion .cont-enAdopcion #contenido .patita-datos .perritoNombre {
+  color: #FFC800;
+  font-size: 2rem;
   font-weight: bold;
+  text-shadow: -1px 2px 3px rgba(0, 0, 0, 0.86);
 }
 
 /*
@@ -125,5 +155,16 @@ section .cont-enAdopcion .contenido .perritoNombre {
     }
 }
  */
+.cont-datos-patita {
+  max-width: 90rem;
+  margin: 0 auto !important;
+  float: none !important;
+}
+.cont-datos-patita .texto-datos-patita .perritoNombre {
+  color: #FFC800;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: -1px 2px 3px rgba(0, 0, 0, 0.86);
+}
 
 /*# sourceMappingURL=styles.css.map */
