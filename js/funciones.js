@@ -19,4 +19,9 @@ function verPerrito(id) {
     //location.href = "ver-.html"; //Redireccionar a la página pasada por parámetro
 }
 
+function adoptarperrito (){
+    
+
+}
+
 
