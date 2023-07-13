@@ -1,3 +1,13 @@
+const pedirPerritos = () => {
+    document.getElementById("contenido").innerHTML = `<div class="spinner-border text-danger text-center" role="status">
+    <span class="visually-hidden">Loading...</span></div>`;
+
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            resolve(perritosPerdidos);
+        }, 3000);
+    })
+}
 function renderPerritos() {
     let perritosPerdidos = cargarPerritosLS();
     //let textoBusqueda = document.getElementById("textoBusqueda").value;
@@ -34,5 +44,9 @@ function renderPerritos() {
     document.getElementById("contenido").innerHTML = contenido;
 };
 
-renderPerritos();
-//renderBotonCarrito();
+
+pedirPerritos().then(perritosPerdidos => {
+    renderPerritos(perritosPerdidos);
+});
+
+//renderPerritos();
