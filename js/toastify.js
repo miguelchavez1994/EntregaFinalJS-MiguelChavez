@@ -17,7 +17,7 @@ const validarFormulario = () => {
         return false;
     }
     if (apellido.value == "") {
-        mostrarMensaje("Complete el campo Nombre!", "error");
+        mostrarMensaje("Complete el campo apellido!", "error");
         apellido.focus();
         return false;
     }
@@ -28,39 +28,39 @@ const validarFormulario = () => {
         return false;
     } 
     if (telefono.value == "") {
-        mostrarMensaje("Complete el campo email!", "error");
+        mostrarMensaje("Complete el campo telefono!", "error");
         telefono.focus();
         return false;
     }
     if (fechaNacimiento.value == "") {
-        mostrarMensaje("Complete el campo email!", "error");
+        mostrarMensaje("Complete el campo Fecha de Nacimiento!", "error");
         fechaNacimiento.focus();
         return false;
     } 
     if (genero.value == "") {
-        mostrarMensaje("Complete el campo email!", "error");
+        mostrarMensaje("Complete el campo genero!", "error");
         genero.focus();
         return false;
     } 
     if (direccion.value == "") {
-        mostrarMensaje("Complete el campo email!", "error");
+        mostrarMensaje("Complete el campo direccion!", "error");
         direccion.focus();
         return false;
     } 
     if (pais.value == "") {
-        mostrarMensaje("Complete el campo email!", "error");
+        mostrarMensaje("Complete el campo pais!", "error");
         pais.focus();
         return false;
     } 
     if (ciudad.value == "") {
-        mostrarMensaje("Complete el campo email!", "error");
+        mostrarMensaje("Complete el campo ciudad!", "error");
         ciudad.focus();
         return false;
     } 
      
 
     
-    mostrarMensaje("Los datos se guardaron correctamente!", "ok");
+    mostrarMensaje("WOOF! Registro exitoso. Te contactaremos para el proceso de adopción.", "ok");
     guardarDatos(nombre.value, apellido.value, email.value, telefono.value, fechaNacimiento.value, genero.value, direccion.value, pais.value,ciudad.value);
 }
 
