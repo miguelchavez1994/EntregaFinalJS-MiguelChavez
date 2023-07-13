@@ -61,7 +61,7 @@ const validarFormulario = () => {
 
     
     mostrarMensaje("Los datos se guardaron correctamente!", "ok");
-    guardarDatos(nombre.value, email.value);
+    guardarDatos(nombre.value, apellido.value, email.value, telefono.value, fechaNacimiento.value, genero.value, direccion.value, pais.value,ciudad.value);
 }
 
 const mostrarMensaje = (texto, tipo) => {
