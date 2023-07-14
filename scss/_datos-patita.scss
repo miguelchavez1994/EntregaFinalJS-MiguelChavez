@@ -2,6 +2,9 @@
     max-width: 90rem;
     margin: 0 auto !important; 
 	float: none !important; 
+    .cont-img-patita{
+        height: 100%;
+    }
     .texto-datos-patita {
         .perritoNombre{
             color:#FFC800 ;
@@ -9,5 +12,13 @@
             font-weight: bold;
             text-shadow: -1px 2px 3px rgba(0,0,0,0.86);                       
         }
+    }
+}
+
+.boton-adoptame {
+    background-color: #FFC800;
+    transition: 0.3s;
+    :hover{
+        background-color: #ffaa00;
     }
 }

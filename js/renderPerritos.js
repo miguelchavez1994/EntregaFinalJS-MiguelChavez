@@ -1,5 +1,5 @@
 const pedirPerritos = () => {
-    document.getElementById("contenido").innerHTML = `<div class="spinner-border text-danger text-center" role="status">
+    document.getElementById("contenido").innerHTML = `<div class="spinner-border cargando-spi" role="status">
     <span class="visually-hidden">Loading...</span></div>`;
 
     return new Promise ((resolve, reject) => {

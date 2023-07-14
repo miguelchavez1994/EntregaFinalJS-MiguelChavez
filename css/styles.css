@@ -110,6 +110,13 @@ header .navbar .links ul li a {
   font-size: 2rem;
 }
 
+.cargando-spi {
+  color: #FFC800;
+  text-shadow: 1;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
 .titulo-2 {
   text-align: center;
   font-weight: bold;
@@ -160,11 +167,22 @@ header .navbar .links ul li a {
   margin: 0 auto !important;
   float: none !important;
 }
+.cont-datos-patita .cont-img-patita {
+  height: 100%;
+}
 .cont-datos-patita .texto-datos-patita .perritoNombre {
   color: #FFC800;
   font-size: 2rem;
   font-weight: bold;
   text-shadow: -1px 2px 3px rgba(0, 0, 0, 0.86);
+}
+
+.boton-adoptame {
+  background-color: #FFC800;
+  transition: 0.3s;
+}
+.boton-adoptame :hover {
+  background-color: #ffaa00;
 }
 
 .container {
