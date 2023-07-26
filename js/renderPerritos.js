@@ -35,7 +35,7 @@ function renderPerritos() {
         });
         
     } else {
-        contenido += `<div class="alert alert-danger text-center" role="alert">No se encontraron productos por el término de búsqueda!</div>`;
+        contenido += `<div class="alert alert-danger text-center" role="alert">No se encontraron perritos por el término de búsqueda!</div>`;
     }
    
     document.getElementById("contenido").innerHTML = contenido;

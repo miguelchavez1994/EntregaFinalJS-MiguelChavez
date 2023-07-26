@@ -15,5 +15,5 @@ const perritosPerdidos = [
 function guardarPerritosLS() {
     localStorage.setItem("perritosPerdidos", JSON.stringify(perritosPerdidos));
 }
-export { perritosPerdidos, guardarPerritosLS };
+export {perritosPerdidos, guardarPerritosLS };
 
