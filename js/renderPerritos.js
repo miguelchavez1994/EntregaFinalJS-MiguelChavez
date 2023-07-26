@@ -18,7 +18,7 @@ function renderPerritos() {
     if (perritosPerdidos.length > 0) {
         perritosPerdidos.forEach(perrito => {
             contenido += `<div class="contenedor col-md-4 col-sm-12 mb-3 justify-content-center">
-                            <a href="/datos-patita.html" onclick="verPerrito(${perrito.id})" class="text-decoration-none">
+                            <a href="./datos-patita.html" onclick="verPerrito(${perrito.id})" class="text-decoration-none">
                                 <div class="tarjeta card text-center border border-0">
                                     <img src="${perrito.imagen}" class="card-img-top" alt="${perrito.nombre}">
                                     <div class="patita-datos card-body">
@@ -30,13 +30,7 @@ function renderPerritos() {
                             </a>
                         </div>`;
         });
-        /*
-        <a es todo el link que contiende el ID de la tarjeta
-            <div es la tarjeta 
-                <img es la imagen que le otorgare perrito.imagen
-                <div es otro div que tendra la informacion de cada tarjeta
-                    < la info de cada tarjeta 
-        */
+        
     } else {
         contenido += `<div class="alert alert-danger text-center" role="alert">No se encontraron productos por el término de búsqueda!</div>`;
     }
@@ -49,4 +43,4 @@ pedirPerritos().then(perritosPerdidos => {
     renderPerritos(perritosPerdidos);
 });
 
-//renderPerritos();
+
