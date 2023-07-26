@@ -10,7 +10,7 @@ function renderPerrito() {
                                 <p class="text-body-tertiary">Sexo: ${perritoDatos.sexo}</p>
                                 <p class="text-body-tertiary">Me perdí en: ${perritoDatos.ciudad} , ${perritoDatos.distrito}</p>
                                 <p class="text-body-tertiary">Fecha de Rescate: ${perritoDatos.fechaEncontrado}</p>
-                                <a href="./form-adopcion.html"><p class="my-5"><button class="boton-adoptame btn btn-primary" onclick="adoptarPerrito(${perritoDatos.id});">Adoptame!</button></p></a>
+                                <a href="./pages/form-adopcion.html"><p class="my-5"><button class="boton-adoptame btn btn-primary" onclick="adoptarPerrito(${perritoDatos.id});">Adoptame!</button></p></a>
                             </div>`;
     document.getElementById("contenidoPerrito").innerHTML = contenidoPerrito
 }

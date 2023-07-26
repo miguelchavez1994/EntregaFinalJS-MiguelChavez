@@ -1,3 +1,6 @@
+import { perritosPerdidos } from './perritos.js';
+import { cargarPerritosLS } from './funciones.js';
+
 const pedirPerritos = () => {
     document.getElementById("contenido").innerHTML = `<div class="spinner-border cargando-spi" role="status">
     <span class="visually-hidden">Loading...</span></div>`;
@@ -18,7 +21,7 @@ function renderPerritos() {
     if (perritosPerdidos.length > 0) {
         perritosPerdidos.forEach(perrito => {
             contenido += `<div class="contenedor col-md-4 col-sm-12 mb-3 justify-content-center">
-                            <a href="./datos-patita.html" onclick="verPerrito(${perrito.id})" class="text-decoration-none">
+                            <a href="./pages/datos-patita.html" onclick="verPerrito(${perrito.id})" class="text-decoration-none">
                                 <div class="tarjeta card text-center border border-0">
                                     <img src="${perrito.imagen}" class="card-img-top" alt="${perrito.nombre}">
                                     <div class="patita-datos card-body">

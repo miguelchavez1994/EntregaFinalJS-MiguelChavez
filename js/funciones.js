@@ -1,11 +1,15 @@
-function guardarPerritosLS() {
+import { perritosPerdidos, guardarPerritosLS } from './perritos.js';
+/*function guardarPerritosLS() {
     localStorage.setItem("perritosPerdidos", JSON.stringify(perritosPerdidos));
 }
-guardarPerritosLS ();
+guardarPerritosLS ();*/
+
 
 function cargarPerritosLS() {
     return JSON.parse(localStorage.getItem("perritosPerdidos"));
 }
+export { cargarPerritosLS };
+
 
 function buscarPerrito(id) {
     const perritosPerdidos = cargarPerritosLS();
@@ -16,12 +20,8 @@ function buscarPerrito(id) {
 function verPerrito(id) {
     const perritoDatos = buscarPerrito(id);
     localStorage.setItem("perritoDatos", JSON.stringify(perritoDatos));
-    //location.href = "ver-.html"; //Redireccionar a la página pasada por parámetro
 }
 
-function adoptarperrito (){
-    
 
-}
 
 
